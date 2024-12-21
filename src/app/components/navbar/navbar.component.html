@@ -1,31 +1,41 @@
 <div class="container py-4 w-100">
   <div class="row justify-content-end">
-    <div class="col-md-auto">
-      <button
-        class="btn btn-warning"
-        routerLink="/start"
+    <div class="col-md-auto dropdown-container">
+      <a
+        class="btn btn-warning dropdown-btn"
+        routerLink=""
         routerLinkActive="active"
       >
         Start
-      </button>
+      </a>
+      <div class="dropdown-content">
+        <a class="dropdown-link" href="#overview">Überblick</a>
+        <a class="dropdown-link" href="#info">Wichtiges</a>
+        <a class="dropdown-link" href="#faq">FAQ</a>
+      </div>
     </div>
     <div class="col-md-auto">
-      <button
-        class="btn btn-warning"
-        routerLink="/faq"
-        routerLinkActive="active"
-      >
-        FAQ
-      </button>
-    </div>
-    <div class="col-md-auto">
-      <button
+      <a
         class="btn btn-warning"
         routerLink="/example"
         routerLinkActive="active"
       >
-        Eierlecker 2000
-      </button>
+        Announcements
+      </a>
+    </div>
+    <div class="col-md-auto">
+      <a
+        class="btn btn-warning"
+        routerLink="/example"
+        routerLinkActive="active"
+      >
+        Team
+      </a>
+    </div>
+    <div class="col-md-auto">
+      <a class="btn btn-warning" href="https://discord.com/">
+        Discord <i class="nf nf-oct-link_external"></i>
+      </a>
     </div>
   </div>
 </div>
