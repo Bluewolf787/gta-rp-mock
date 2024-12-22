@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #212529;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffc107;
+  border-radius: 20px;
+}
+
+::selection {
+  background: #ffc107; /* WebKit/Blink browsers */
+  color: #000; /* text color */
+}
+::-moz-selection {
+  background: #ffc107; /* Gecko browsers */
+  color: #000; /* text color */
+}

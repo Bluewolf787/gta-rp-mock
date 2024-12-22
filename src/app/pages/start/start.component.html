@@ -1,16 +1,17 @@
-<div class="container">
+<div class="container min-vh-100">
   <section
-    class="p-5 my-5 rounded-top-5"
+    class="p-5 my-5 rounded-5"
     [ngStyle]="{
       'background-image':
         'url(' + 'https://wallpaperaccess.com/full/899965.jpg' + ')'
     }"
+    id="overview"
   >
     <div class="row">
-      <div class="col p-5 bg-dark text-light" style="--bs-bg-opacity: 0.75">
+      <div class="col p-5 bg-dark shadow" style="--bs-bg-opacity: 0.75">
         <div class="position-relative top-50 start-50 translate-middle w-75">
-          <h1 class="mb-5 text-warning">Unser Lutscher Server</h1>
-          <p class="d-print-block">
+          <h1 class="mb-5 text-warning fw-bold">Lorem ipsum dolor</h1>
+          <p class="text-light">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
@@ -19,7 +20,7 @@
           </p>
         </div>
       </div>
-      <div class="col col-lg-4 text-center">
+      <div class="col col-lg-4 text-end">
         <img
           src="https://imgs.search.brave.com/6QwW2II0WdzpDRUPd8OTA_LxWBak5VppfO0ennn6V8A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzc3LzVj/LzhiLzc3NWM4YmU0/OTEwYTkwZjkzOTYw/Zjg0YjlmZTdhNDI1/LmpwZw"
           alt=""
@@ -29,16 +30,16 @@
     </div>
     <div class="row"></div>
   </section>
-  <section class="text-bg-dark text-light my-5">
+  <section class="bg-dark text-light my-5 rounded-5" id="info">
     <div class="container p-5">
       <div class="row text-center my-5">
-        <div class="col text-warning">
-          <h1>Wichtige Dinge, die keinen jucken!</h1>
+        <div class="col">
+          <h1 class="text-warning fw-bold">Lorem ipsum dolor sit amet.</h1>
         </div>
       </div>
       <div class="row my-5">
         <div class="col">
-          <h2>Nase gebrocken</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -46,7 +47,7 @@
           </p>
         </div>
         <div class="col">
-          <h2>Eier gequetscht</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -56,7 +57,7 @@
       </div>
       <div class="row my-5">
         <div class="col">
-          <h2>Füße am Stinken</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -64,7 +65,7 @@
           </p>
         </div>
         <div class="col">
-          <h2>LS Heat Neueröffnung</h2>
+          <h2>Lorem ipsum</h2>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -74,29 +75,49 @@
       </div>
     </div>
   </section>
-  <section class="text-bg-dark text-light my-5 rounded-bottom-5">
+  <section class="bg-dark text-light my-5 rounded-5" id="faq">
     <div class="container p-5">
       <div class="row text-center my-5">
-        <div class="col text-warning">
-          <h1>Fragen & Antworten für dumme</h1>
+        <div class="col">
+          <h1 class="text-warning fw-bold">FAQ</h1>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <h3>Q: Bekommt man den Arsch bei RDM versohlt?</h3>
-          <p>A: Klar!</p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+            </ng-template>
+            <p class="m-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </p-panel>
         </div>
       </div>
       <div class="row my-5">
         <div class="col">
-          <h3>Q: Kann man ficken?</h3>
-          <p>A: Nur wenn man sich mit Facecam IRL auszieht!</p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                rutrum magna est, nec lobortis nunc cursus at?
+              </h3>
+            </ng-template>
+            <p class="m-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum finibus purus in.
+            </p>
+          </p-panel>
         </div>
       </div>
       <div class="row my-5">
         <div class="col">
-          <h3>Q: Ist das Hardcore RP!</h3>
-          <p>A: Lies das Regelwerk</p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>Lorem ipsum dolor sit amet?</h3>
+            </ng-template>
+            <p class="m-2">Lorem ipsum dolor.</p>
+          </p-panel>
         </div>
       </div>
     </div>
