@@ -84,26 +84,40 @@
       </div>
       <div class="row">
         <div class="col">
-          <h3>Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
-          <p>A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h3>
+            </ng-template>
+            <p class="m-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </p-panel>
         </div>
       </div>
       <div class="row my-5">
         <div class="col">
-          <h3>
-            Q: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            rutrum magna est, nec lobortis nunc cursus at?
-          </h3>
-          <p>
-            A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vestibulum finibus purus in.
-          </p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                rutrum magna est, nec lobortis nunc cursus at?
+              </h3>
+            </ng-template>
+            <p class="m-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Vestibulum finibus purus in.
+            </p>
+          </p-panel>
         </div>
       </div>
       <div class="row my-5">
         <div class="col">
-          <h3>Q: Lorem ipsum dolor sit amet?</h3>
-          <p>A: Lorem ipsum dolor.</p>
+          <p-panel [toggleable]="true" toggler="header" [collapsed]="true">
+            <ng-template #header>
+              <h3>Lorem ipsum dolor sit amet?</h3>
+            </ng-template>
+            <p class="m-2">Lorem ipsum dolor.</p>
+          </p-panel>
         </div>
       </div>
     </div>
