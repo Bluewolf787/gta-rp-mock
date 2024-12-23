@@ -1,50 +1,41 @@
-<div class="container py-4 w-100">
-  <div class="row justify-content-end">
-    <div class="col-md-auto dropdown-container">
-      <a
-        class="btn btn-warning dropdown-btn"
-        routerLink=""
-        routerLinkActive="active"
-      >
-        Start
-      </a>
-      <div class="dropdown-content">
-        <a class="dropdown-link" href="#overview">Überblick</a>
-        <a class="dropdown-link" href="#info">Wichtiges</a>
-        <a class="dropdown-link" href="#faq">FAQ</a>
+<nav
+  class="navbar navbar-expand-lg sticky-top bg-black shadow"
+  data-bs-theme="dark"
+>
+  <div class="container justify-content-end">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button
+      class="navbar-toggler border border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <div class="container">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-end float-end">
+          <li class="nav-item">
+            <a class="btn btn-blue mx-2 my-2" routerLink=""> Start </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-blue mx-2 my-2" routerLink="/example">
+              Announcements
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-blue mx-2 my-2" routerLink="/example">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn bg-blue mx-2 my-2" href="https://discord.com/">
+              Discord <i class="nf nf-oct-link_external"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="col-md-auto">
-      <a
-        class="btn btn-warning"
-        routerLink="/example"
-        routerLinkActive="active"
-      >
-        Announcements
-      </a>
-    </div>
-    <div class="col-md-auto">
-      <a
-        class="btn btn-warning"
-        routerLink="/example"
-        routerLinkActive="active"
-      >
-        Regeln
-      </a>
-    </div>
-    <div class="col-md-auto">
-      <a
-        class="btn btn-warning"
-        routerLink="/example"
-        routerLinkActive="active"
-      >
-        Team
-      </a>
-    </div>
-    <div class="col-md-auto">
-      <a class="btn btn-warning" href="https://discord.com/">
-        Discord <i class="nf nf-oct-link_external"></i>
-      </a>
-    </div>
   </div>
-</div>
+</nav>
