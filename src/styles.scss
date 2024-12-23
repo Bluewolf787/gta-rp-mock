@@ -4,18 +4,68 @@
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #212529;
+  background: #000;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ffc107;
-  border-radius: 20px;
+  background-color: #0a3161;
 }
 
 ::selection {
-  background: #ffc107; /* WebKit/Blink browsers */
-  color: #000; /* text color */
+  background: #0a3161; /* WebKit/Blink browsers */
+  color: #fff; /* text color */
 }
 ::-moz-selection {
-  background: #ffc107; /* Gecko browsers */
-  color: #000; /* text color */
+  background: #0a3161; /* Gecko browsers */
+  color: #fff; /* text color */
+}
+
+.white {
+  color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.red {
+  color: #b31942;
+}
+
+.bg-red {
+  background-color: #b31942;
+}
+
+.blue {
+  color: #0a3161;
+}
+
+.bg-blue {
+  background-color: #0a3161;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #0a3161;
+
+  &:hover {
+    color: #fff;
+    background-color: #0a3161;
+    border-width: 1px;
+    border-color: #fff;
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #0a3161;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: #0a3161;
+  }
+
+  &:focus-visible {
+    color: #fff;
+    background-color: #0a3161;
+  }
 }
